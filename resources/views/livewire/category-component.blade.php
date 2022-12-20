@@ -23,7 +23,8 @@
                     <div class="col-lg-9">
                         <div class="shop-product-fillter">
                             <div class="totall-product">
-                                <p> We found <strong class="text-brand">{{ $products->total() }}</strong> items for you!
+                                <p> We found <strong class="text-brand">{{ $products->total() }}</strong> items for you
+                                    from <strong class="text-brand">{{ $category_name }}</strong> Category!
                                 </p>
                             </div>
                             <div class="sort-by-product-area">
@@ -62,7 +63,7 @@
                                         <ul>
                                             <li><a class="{{ $orderBy ==
                                             'Default
-                                                                                                                                                                                        Sorting'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Sorting'
                                                 ? 'active'
                                                 : '' }}"
                                                     href="#"
