@@ -418,7 +418,7 @@
                                                 <tr>
                                                     <td class="cart_total_label">Total</td>
                                                     <td class="cart_total_amount"><strong><span
-                                                                class="font-xl fw-900 text-brand">${{ Cart::instance('cart')->otal() }}</span></strong>
+                                                                class="font-xl fw-900 text-brand">${{ Cart::instance('cart')->total() }}</span></strong>
                                                     </td>
                                                 </tr>
                                             </tbody>

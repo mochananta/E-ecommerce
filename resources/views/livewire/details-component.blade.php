@@ -163,9 +163,7 @@
                                             </div>
                                             <div class="product-extra-link2">
                                                 <button type="button" class="button button-add-to-cart"
-                                                    wire:click.prevent="store({{ $product->id }},'{{ $product->name }}',{{ $product->regular_price }})">Add
-                                                    to
-                                                    cart</button>
+                                                    wire:click.prevent="store({{ $product->id }},'{{ $product->name }}',{{ $product->regular_price }})">Add to cart</button>
                                                 <a aria-label="Add To Wishlist" class="action-btn hover-up"
                                                     href="wishlist.php"><i class="fi-rs-heart"></i></a>
                                                 <a aria-label="Compare" class="action-btn hover-up"

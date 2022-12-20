@@ -76,14 +76,7 @@
                                         {{-- <span class="old-price">$245.8</span> --}}
                                     </div>
                                     <div class="product-action-1 show">
-                                        <a aria-label="Remove From Wishlist" class="action-btn hover-up wishlisted"
-                                            href="#"
-                                            wire:click.prevent="removeFromWishlist({{ $item->model->id }})"><i
-                                                class="fi-rs-heart"></i></a>
-
-                                        {{-- <a aria-label="Add To Cart" class="action-btn hover-up" href="#"
-                                            wire:click.prevent="store({{ $item->model->id }},'{{ $item->model->name }}',{{ $item->model->regular_price }})"><i
-                                                class="fi-rs-shopping-bag-add"></i></a> --}}
+                                        <a aria-label="Remove From Wishlist" class="action-btn hover-up wishlisted" href="#" wire:click.prevent="removeFromWishlist({{ $item->model->id }})"><i class="fi-rs-heart"></i></a>
                                     </div>
                                 </div>
                             </div>
