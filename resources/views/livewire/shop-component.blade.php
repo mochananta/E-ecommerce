@@ -71,7 +71,7 @@
                                         <ul>
                                             <li><a class="{{ $orderBy ==
                                             'Default
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Sorting'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Sorting'
                                                 ? 'active'
                                                 : '' }}"
                                                     href="#"
@@ -143,8 +143,9 @@
                                             </div>
                                             <div class="product-action-1 show">
                                                 @if ($witems->contains($product->id))
-                                                    <a aria-label="Add To Wishlist"
-                                                        class="action-btn hover-up wishlisted" href="wishlist.php"><i
+                                                    <a aria-label="Remove From Wishlist"
+                                                        class="action-btn hover-up wishlisted" href="#"
+                                                        wire:click.prevent="removeFromWishlist({{ $product->id }})"><i
                                                             class="fi-rs-heart"></i></a>
                                                 @else
                                                     <a aria-label="Add To Wishlist" class="action-btn hover-up"
