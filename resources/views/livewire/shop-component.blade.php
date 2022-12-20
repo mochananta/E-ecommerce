@@ -69,11 +69,7 @@
                                     </div>
                                     <div class="sort-by-dropdown">
                                         <ul>
-                                            <li><a class="{{ $orderBy ==
-                                            'Default
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Sorting'
-                                                ? 'active'
-                                                : '' }}"
+                                            <li><a class="{{ $orderBy == 'Default Sorting' ? 'active' : '' }}"
                                                     href="#"
                                                     wire:click.prevent="changeOrderBy('Default Sorting')">Default
                                                     Sorting</a></li>
