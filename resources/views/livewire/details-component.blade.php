@@ -98,15 +98,15 @@
                                                     <div class="product-rating" style="width:90%">
                                                     </div>
                                                 </div>
-                                                <span class="font-small ml-5 text-muted"> (25 reviews)</span>
+                                                <span class="ml-5 font-small text-muted"> (25 reviews)</span>
                                             </div>
                                         </div>
                                         <div class="clearfix product-price-cover">
-                                            <div class="product-price primary-color float-left">
+                                            <div class="float-left product-price primary-color">
                                                 <ins><span
                                                         class="text-brand">${{ $product->regular_price }}</span></ins>
                                                 {{-- <ins><span class="old-price font-md ml-15">$200.00</span></ins>
-                                                <span class="save-price  font-md color3 ml-15">25% Off</span> --}}
+                                                <span class="save-price font-md color3 ml-15">25% Off</span> --}}
                                             </div>
                                         </div>
                                         <div class="bt-1 border-color-1 mt-15 mb-15"></div>
@@ -115,11 +115,11 @@
                                         </div>
                                         {{-- <div class="product_sort_info font-xs mb-30">
                                             <ul>
-                                                <li class="mb-10"><i class="fi-rs-crown mr-5"></i> 1 Year AL Jazeera
+                                                <li class="mb-10"><i class="mr-5 fi-rs-crown"></i> 1 Year AL Jazeera
                                                     Brand Warranty</li>
-                                                <li class="mb-10"><i class="fi-rs-refresh mr-5"></i> 30 Day Return
+                                                <li class="mb-10"><i class="mr-5 fi-rs-refresh"></i> 30 Day Return
                                                     Policy</li>
-                                                <li><i class="fi-rs-credit-card mr-5"></i> Cash on Delivery available
+                                                <li><i class="mr-5 fi-rs-credit-card"></i> Cash on Delivery available
                                                 </li>
                                             </ul>
                                         </div> --}}
@@ -154,7 +154,7 @@
                                         </div>
                                         <div class="bt-1 border-color-1 mt-30 mb-30"></div>
                                         <div class="detail-extralink">
-                                            <div class="detail-qty border radius">
+                                            <div class="border detail-qty radius">
                                                 <a href="#" class="qty-down"><i
                                                         class="fi-rs-angle-small-down"></i></a>
                                                 <span class="qty-val">1</span>
@@ -175,7 +175,7 @@
                                             <li class="mb-5">Tags: <a href="#" rel="tag">Cloth</a>, <a
                                                     href="#" rel="tag">Women</a>, <a href="#"
                                                     rel="tag">Dress</a> </li>
-                                            <li>Availability:<span class="in-stock text-success ml-5">8 Items In
+                                            <li>Availability:<span class="ml-5 in-stock text-success">8 Items In
                                                     Stock</span></li>
                                         </ul>
                                     </div>
@@ -343,7 +343,7 @@
                                                     <div class="comment-list">
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
-                                                                <div class="thumb text-center">
+                                                                <div class="text-center thumb">
                                                                     <img src="{{ asset('assets/imgs/page/avatar-6.jpg') }}"
                                                                         alt="">
                                                                     <h6><a href="#">Jacky Chan</a></h6>
@@ -371,7 +371,7 @@
                                                         <!--single-comment -->
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
-                                                                <div class="thumb text-center">
+                                                                <div class="text-center thumb">
                                                                     <img src="{{ asset('assets/imgs/page/avatar-7.jpg') }}"
                                                                         alt="">
                                                                     <h6><a href="#">Ana Rosie</a></h6>
@@ -398,7 +398,7 @@
                                                         <!--single-comment -->
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
-                                                                <div class="thumb text-center">
+                                                                <div class="text-center thumb">
                                                                     <img src="{{ asset('assets/imgs/page/avatar-8.jpg') }}"
                                                                         alt="">
                                                                     <h6><a href="#">Steven Keny</a></h6>
@@ -595,8 +595,8 @@
                         </div>
                         <!-- Fillter By Price -->
                         <div class="sidebar-widget price_range range mb-30">
-                            <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">Fill by price</h5>
+                            <div class="pb-10 mb-20 widget-header position-relative">
+                                <h5 class="mb-10 widget-title">Fill by price</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             <div class="price-filter">
@@ -611,7 +611,7 @@
                                 </div>
                             </div>
                             <div class="list-group">
-                                <div class="list-group-item mb-10 mt-10">
+                                <div class="mt-10 mb-10 list-group-item">
                                     <label class="fw-900">Color</label>
                                     <div class="custome-checkbox">
                                         <input class="form-check-input" type="checkbox" name="checkbox"
@@ -648,26 +648,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i>
+                            <a href="shop.html" class="btn btn-sm btn-default"><i class="mr-5 fi-rs-filter"></i>
                                 Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
-                        <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
-                            <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">New products</h5>
+                        <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+                            <div class="pb-10 mb-20 widget-header position-relative">
+                                <h5 class="mb-10 widget-title">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             @foreach ($nproducts as $nproduct)
-                                <div class="single-post clearfix">
+                                <div class="clearfix single-post">
                                     <div class="image">
                                         <img src="{{ asset('assets/imgs/shop/product-') }}{{ $nproduct->id }}-1.jpg"
                                             alt="{{ $nproduct->name }}">
                                     </div>
-                                    <div class="content pt-10">
+                                    <div class="pt-10 content">
                                         <h5><a
                                                 href="{{ route('product.details', ['slug' => $nproduct->slug]) }}">{{ $nproduct->name }}</a>
                                         </h5>
-                                        <p class="price mb-0 mt-5">${{ $nproduct->regular_price }}</p>
+                                        <p class="mt-5 mb-0 price">${{ $nproduct->regular_price }}</p>
                                         <div class="product-rate">
                                             <div class="product-rating" style="width:90%"></div>
                                         </div>
