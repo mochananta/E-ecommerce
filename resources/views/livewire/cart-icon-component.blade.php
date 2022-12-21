@@ -11,8 +11,8 @@
                 <li>
                     <div class="shopping-cart-img">
                         <a href="{{ Route('product.details', ['slug' => $item->model->slug]) }}"><img
-                                alt="{{ $item->model->name }}"
-                                src="{{ asset('assets/imgs/shop/product-') }}{{ $item->model->id }}-1.jpg"></a>
+                                alt="{{ $item->model->name }}" src="{{ asset('assets/imgs/products')}}/{{$product->image}}"></a> 
+                                {{-- {{ asset('assets/imgs/shop/product-') }}{{ $item->model->id }}-1.jpg --}}
                     </div>
                     <div class="shopping-cart-title">
                         <h4><a
