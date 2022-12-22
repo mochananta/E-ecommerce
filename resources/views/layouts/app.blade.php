@@ -429,7 +429,7 @@
                                                         <li><a href="{{ route('admin.categories') }}">Categories</a></li>
                                                         <li><a href="{{ route('admin.home.slider') }}">Manage Slider</a></li>
                                                         <li><a href="#">Coupons</a></li>
-                                                        <li><a href="#">Orders</a></li>
+                                                        <li><a href="{{ route('admin.home.orders') }}">Orders</a></li>
                                                         <li><a href="{{ route('admin.customers') }}">Customers</a></li>
                                                     </ul>
                                                 @else

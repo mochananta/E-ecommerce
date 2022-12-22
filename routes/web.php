@@ -12,6 +12,7 @@ use App\Http\Livewire\Admin\AdminEditCustomerComponent;
 use App\Http\Livewire\Admin\AdminEditHomeSlideComponent;
 use App\Http\Livewire\Admin\AdminEditProductComponent;
 use App\Http\Livewire\Admin\AdminHomeSliderComponent;
+use App\Http\Livewire\Admin\AdminOrderComponent;
 use App\Http\Livewire\Admin\AdminProductComponent;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\CategoryComponent;
@@ -77,6 +78,7 @@ Route::middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/admin/customers', AdminCustomerComponent::class)->name('admin.customers');
     Route::get('/admin/customer/add', AdminAddCustomerComponent::class)->name('admin.customer.add');
     Route::get('/admin/customer/edit/{user_id}', AdminEditCustomerComponent::class)->name('admin.customer.edit');
+    Route::get('/admin/orders', AdminOrderComponent::class)->name('admin.home.orders');
 });
 
 
