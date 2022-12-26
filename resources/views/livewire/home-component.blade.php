@@ -97,8 +97,8 @@
             <div class="tab-content wow fadeIn animated" id="myTabContent">
                 <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                     <div class="row product-grid-4">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
-                            @foreach ($fproducts as $fproduct)
+                        @foreach ($fproducts as $fproduct)
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
@@ -146,8 +146,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
-                        </div>
+                            </div>
+                        @endforeach
                     </div>
                     <!--End product-grid-4-->
                 </div>
@@ -886,10 +886,13 @@
                     @foreach ($pcategories as $pcategory)
                         <div class="card-1">
                             <figure class="overflow-hidden img-hover-scale">
-                                <a href="{{ route('product.category',['slug'=>$pcategory->slug]) }}"><img src="{{ asset('assets/imgs/categories') }}/{{ $pcategory->image }}"
+                                <a href="{{ route('product.category', ['slug' => $pcategory->slug]) }}"><img
+                                        src="{{ asset('assets/imgs/categories') }}/{{ $pcategory->image }}"
                                         alt="{{ $pcategory->name }}"></a>
                             </figure>
-                            <h5><a href="{{ route('product.category',['slug'=>$pcategory->slug]) }}">{{ $pcategory->name }}</a></h5>
+                            <h5><a
+                                    href="{{ route('product.category', ['slug' => $pcategory->slug]) }}">{{ $pcategory->name }}</a>
+                            </h5>
                         </div>
                     @endforeach
                 </div>
