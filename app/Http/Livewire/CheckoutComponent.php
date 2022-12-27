@@ -10,7 +10,7 @@ use Livewire\Component;
 
 class CheckoutComponent extends Component
 {
-    public $total, $nohp, $alamat;
+    public $total, $email, $name;
 
     public function mount()
     {
@@ -23,17 +23,17 @@ class CheckoutComponent extends Component
 
     public function checkout()
     {
-        dd('hai checkout');
-        // $this->validate([
-        //     'nohp' => 'required',
-        //     'alamat' => 'required'
-        // ]);
+        // dd('hai checkout');
+        $this->validate([
+            'name' => 'required',
+            'email' => 'required'
+        ]);
 
-        // //Simpan noHp Alamat ke data Users
-        // $user = User::where('id', Auth::user()->id)->first();
-        // $user->nohp = $this->nohp;
-        // $user->alamat = $this->alamat;
-        // $user->update();
+        //Simpan noHp Alamat ke data Users
+        $User = User::where('id', Auth::user()->id)->first();
+        $User->name = $this->name;
+        $User->email = $this->email;
+        $User->update();
         
         // //update data orders
         // // $orders = Order::where('user_id', Auth::user()->id)->where('status', 0)->first();
@@ -44,7 +44,7 @@ class CheckoutComponent extends Component
 
         session()->flash('message', "Sukses Checkout");
 
-        return redirect()->route('history');
+        // return redirect()->route('history');
     }
 
     public function render()

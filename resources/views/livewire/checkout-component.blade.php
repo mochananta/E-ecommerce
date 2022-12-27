@@ -32,25 +32,27 @@
                     <div class="media">
                         <img class="mr-3" src="{{ url('assets/imgs/bri.png')}}" alt="Bank BRI" width="120">
                         <div class="media-body">
-                          <h5 class="mt-0">BANK BRI</h5>  No. Rekening 012345-678-910 atas nama <strong> Mohammad Ananta</strong>
+                          <h5 class="mt-0">BANK BRI</h5>  No. Rekening 012345-678-910 atas nama <strong> Pihak WO</strong>
                         </div>
                       </div>
                       <form wire:submit.prevent="checkout">
-                        <div class="from-group mt-50">
-                            <label for="" class="form-label">No. HP</label>
-                            <input id="nohp "type="text" class="form-control" placeholder="Enter no" wire:model="nohp" wire:keyup="nohp" autocomplete="name" autofocus/>
-                                @error('nohp') 
-                                    <p class="text-danger">{{ $message }}</p>
-                                @enderror
+                        <div class="mt-3 mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter user name" wire:model="name" />
+                        @error('name')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
                         </div>
-                        <div class="from-group">
-                            <label for="" class="form-label">Alamat</label>
-                            <input type="text" name="alamat" class="form-control" placeholder="Enter alamat" wire:model="alamat" autocomplete="name" autofocus/>
-                                @error('name')
-                                    <p class="text-danger">{{ $message }}</p>
-                                @enderror
+                        <div class="mt-3 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Enter email" wire:model="email" />
+                        @error('email')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
                         </div>
-                        <button type="submit" class="btn btn-success float-end"> <i class="fas fa-arrow-right"></i>Checkout</button>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary float-end">Submit</button>
                     </form>
                 </div>
             </div>
