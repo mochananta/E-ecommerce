@@ -17,6 +17,7 @@ use App\Http\Livewire\Admin\AdminProductComponent;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\CheckoutComponent;
+use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\SearchComponent;
@@ -57,6 +58,8 @@ Route::get('/product-category/{slug}', CategoryComponent::class)->name('product.
 Route::get('/search', SearchComponent::class)->name('product.search');
 
 Route::get('/about', AboutComponent::class)->name('about');
+
+Route::get('/contact', ContactComponent::class)->name('contact');
 
 
 
