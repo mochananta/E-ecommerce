@@ -15,36 +15,27 @@
                         <h4 class="mtext-105 cl2 txt-center p-b-30">
                             Send Us A Message
                         </h4>
-                        <form class="contact-form-style text-center" id="contact-form" action="#" method="post">
+                        <form wire:submit.prevent="saveMessage" class="contact-form-style text-center" id="contact-form" action="#" method="post">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="input-style mb-20">
-                                        <input name="name" placeholder="First Name" type="text">
+                                        <input wire:model="email" name="email" placeholder="Your Email" type="email">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="input-style mb-20">
-                                        <input name="email" placeholder="Your Email" type="email">
+                                        <input wire:model="telepon" name="telephone" placeholder="Your Phone" type="tel">
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-style mb-20">
-                                        <input name="telephone" placeholder="Your Phone" type="tel">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-style mb-20">
-                                        <input name="subject" placeholder="Subject" type="text">
-                                    </div>
-
-                                    
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <div class="textarea-style mb-30">
-                                        <textarea name="message" placeholder="Message"></textarea>
+                                        <textarea wire:model="message" name="message" placeholder="Message"></textarea>
                                     </div>
                                     <button class="submit submit-auto-width" type="submit">Send message</button>
                                 </div>
+                                {{-- <div>
+                                    {{$message}}
+                                </div> --}}
                             </div>
                         </form>
                         <p class="form-messege"></p>
