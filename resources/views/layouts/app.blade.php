@@ -11,7 +11,7 @@
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/store.ico') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     @livewireStyles
@@ -617,13 +617,13 @@
                                     </div>
                                     <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                                     <p class="wow fadeIn animated">
-                                        <strong>Address: </strong>562 Wellington Road
+                                        <strong>Address: </strong>Jln KH. Hasyim Asyari, Pancoran Kulon, Rogojampi, Kabupaten Banyuwangi
                                     </p>
                                     <p class="wow fadeIn animated">
-                                        <strong>Phone: </strong>+1 0000-000-000
+                                        <strong>Phone: </strong>+62 852 3606 4658 
                                     </p>
                                     <p class="wow fadeIn animated">
-                                        <strong>Email: </strong>contact@surfsidemedia.in
+                                        <strong>Email: </strong>wongosing@gmail.com
                                     </p>
                                     <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                                     <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
@@ -643,17 +643,17 @@
                             <div class="col-lg-2 col-md-3">
                                 <h5 class="widget-title wow fadeIn animated">About</h5>
                                 <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
-                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="{{route('about')}}">About Us</a></li>
                                     <li><a href="#">Delivery Information</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="{{route('contact')}}">Contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-2 col-md-3">
                                 <h5 class="widget-title wow fadeIn animated">My Account</h5>
                                 <ul class="footer-list wow fadeIn animated">
-                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="{{route('home.index')}}">My Account</a></li>
                                     <li><a href="#">View Cart</a></li>
                                     <li><a href="#">My Wishlist</a></li>
                                     <li><a href="#">Track My Order</a></li>
@@ -695,7 +695,7 @@
                         </div>
                         <div class="col-lg-6">
                             <p class="mb-0 text-lg-end text-start font-sm text-muted">
-                                &copy; <strong class="text-brand">SurfsideMedia</strong> All rights reserved
+                                &copy; <strong class="text-brand">Wong Osing</strong> All rights reserved
                             </p>
                         </div>
                     </div>
