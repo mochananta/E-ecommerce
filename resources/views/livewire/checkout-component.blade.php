@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-12">
                 @if(session()->has('message'))
-                <div class="alert alert-danger">
+                <div class="alert alert-success">
                     {{ session('message') }}
                 </div>
                 @endif
@@ -37,16 +37,16 @@
                       </div>
                       <form wire:submit.prevent="checkout">
                         <div class="mt-3 mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="Enter user name" wire:model="name" />
-                        @error('name')
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Enter user name" wire:model="email" />
+                        @error('email')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                         </div>
                         <div class="mt-3 mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="text" name="email" class="form-control" placeholder="Enter email" wire:model="email" />
-                        @error('email')
+                            <label for="telepon" class="form-label">Telepon</label>
+                            <input type="number" name="telepon" class="form-control" placeholder="Enter telepon" wire:model="telepon" />
+                        @error('telepon')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                         </div>

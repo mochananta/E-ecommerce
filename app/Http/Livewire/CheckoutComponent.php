@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Checkout;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
@@ -10,7 +11,7 @@ use Livewire\Component;
 
 class CheckoutComponent extends Component
 {
-    public $total, $email, $name;
+    public $total, $email, $telepon;
 
     public function mount()
     {
@@ -25,15 +26,15 @@ class CheckoutComponent extends Component
     {
         // dd('hai checkout');
         $this->validate([
-            'name' => 'required',
-            'email' => 'required'
+            'email' => 'required',
+            'telepon' => 'required'
         ]);
 
         //Simpan noHp Alamat ke data Users
-        $User = User::where('id', Auth::user()->id)->first();
-        $User->name = $this->name;
-        $User->email = $this->email;
-        $User->update();
+        $Checkout = new Checkout();
+        $Checkout->email = $this->email;
+        $Checkout->telepon = $this->telepon;
+        $Checkout->save();
         
         // //update data orders
         // // $orders = Order::where('user_id', Auth::user()->id)->where('status', 0)->first();

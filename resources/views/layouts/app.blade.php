@@ -181,7 +181,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="has-children">
+                                        {{-- <li class="has-children">
                                             <a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's
                                                 Clothing</a>
                                             <div class="dropdown-menu">
@@ -347,7 +347,7 @@
                                                 <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Automobiles
                                                         & Motorcycles</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                     <div class="more_categories">Show more...</div>
                                 </div>
