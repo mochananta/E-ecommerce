@@ -39,7 +39,7 @@ class CartComponent extends Component
 
     public function checkout()
     {
-        if (Auth::check()) {
+        if (!Auth::check()) {
             return redirect()->route('shop.checkout');
         } else {
             return redirect()->route('login');
