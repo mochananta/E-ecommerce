@@ -6,12 +6,15 @@ use App\Models\Checkout;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class CheckoutComponent extends Component
 {
-    public $total, $email, $telepon;
+    use WithFileUploads;
+    public $total, $name, $email, $telepon, $alamat, $image;
 
     public function mount()
     {
@@ -26,14 +29,22 @@ class CheckoutComponent extends Component
     {
         // dd('hai checkout');
         $this->validate([
+            'name' => 'required',
             'email' => 'required',
-            'telepon' => 'required'
+            'telepon' => 'required',
+            'alamat' => 'required',
+            'image' => 'required'
         ]);
 
         //Simpan noHp Alamat ke data Users
         $Checkout = new Checkout();
+        $Checkout->name = $this->name;
         $Checkout->email = $this->email;
         $Checkout->telepon = $this->telepon;
+        $Checkout->alamat = $this->alamat;
+        $imageName = Carbon::now()->timestamp . '.' . $this->image->extension();
+        $this->image->storeAs('checkouts', $imageName);
+        $Checkout->image = $imageName;
         $Checkout->save();
         
         // //update data orders

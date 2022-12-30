@@ -15,10 +15,12 @@ return new class extends Migration
     {
         Schema::create('checkouts', function (Blueprint $table) {
             $table->id();
-            // $table->string('image');
-            // $table->text('images')->nullable();
+            $table->string('name');
             $table->string('email');
             $table->string('telepon');
+            $table->string('alamat');
+            $table->string('image');
+            $table->text('images')->nullable();
             $table->timestamps();
             });
     }

@@ -122,7 +122,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <a href="{{ route('shop.checkout') }}" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
+                                    <a href="{{ route('tf') }}" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
                                         Proceed To CheckOut</a>
                                 </div>
                             </div>

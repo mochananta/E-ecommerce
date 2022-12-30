@@ -22,6 +22,7 @@ use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\SearchComponent;
 use App\Http\Livewire\ShopComponent;
+use App\Http\Livewire\TransaksiComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\WishlistComponent;
 use Illuminate\Support\Facades\Route;
@@ -60,6 +61,10 @@ Route::get('/search', SearchComponent::class)->name('product.search');
 Route::get('/about', AboutComponent::class)->name('about');
 
 Route::get('/contact', ContactComponent::class)->name('contact');
+
+Route::get('/transaksi', TransaksiComponent::class)->name('tf');
+
+
 
 
 

@@ -37,6 +37,8 @@ class CartComponent extends Component
     }
     public function render()
     {
+
+        session()->flash('message', "Sukses Check Out");
         return view('livewire.cart-component');
     }
 }
