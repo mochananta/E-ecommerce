@@ -908,7 +908,7 @@
                         <div class="banner-text">
                             <span>Smart Offer</span>
                             <h4>Save 20% on <br>Woman Bag</h4>
-                            <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                            <a href="{{ route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -918,7 +918,7 @@
                         <div class="banner-text">
                             <span>Sale off</span>
                             <h4>Great Summer <br>Collection</h4>
-                            <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                            <a href="{{ route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -928,7 +928,7 @@
                         <div class="banner-text">
                             <span>New Arrivals</span>
                             <h4>Shop Today’s <br>Deals & Offers</h4>
-                            <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                            <a href="{{ route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

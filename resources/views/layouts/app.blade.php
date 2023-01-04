@@ -356,10 +356,10 @@
                                 <nav>
                                     <ul>
                                         <li><a class="active" href="/">Home </a></li>
-                                        <li><a href="{{ route('about') }}">About</a></li>
-                                        <li><a href="{{ route('shop') }}">Shop</a></li>
-                                        <li><a href="blog.html">Blog </a></li>
-                                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                                        <li><a class="" href="{{ route('about') }}">About</a></li>
+                                        <li><a class="" href="{{ route('shop') }}">Shop</a></li>
+                                        {{-- <li><a href="blog.html">Blog </a></li> --}}
+                                        <li><a class="" href="{{ route('contact') }}">Contact</a></li>
                                         @auth
                                             <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
                                                 @if (Auth::user()->utype == 'ADM')
@@ -383,9 +383,9 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="hotline d-none d-lg-block">
+                            {{-- <div class="hotline d-none d-lg-block">
                                 <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+62) 852 3606 4658 </p>
-                            </div>
+                            </div> --}}
                             <p class="mobile-promotion">Happy <span class="text-brand">Mother's Day</span>. Big Sale Up to 40%
                             </p>
                             <div class="header-action-right d-block d-lg-none">

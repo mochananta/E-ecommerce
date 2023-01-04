@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="/" rel="nofollow">Home</a>
                     <span></span> Shop
                     <span></span> Your Cart
                 </div>
@@ -84,12 +84,12 @@
                                 @endif
                             </div>
                             <div class="cart-action text-end">
-                                <a class="mr-10 btn mb-sm-15"><i class="mr-10 fi-rs-shuffle"></i>Update Cart</a>
-                                <a class="btn "><i class="mr-10 fi-rs-shopping-bag"></i>Continue Shopping</a>
+                                {{-- <a class="mr-10 btn mb-sm-15"><i class="mr-10 fi-rs-shuffle"></i>Update Cart</a> --}}
+                                <a class="btn "><i class="mr-10 fi-rs-shopping-bag">{{ route('shop') }}</i>Continue Shopping</a>
                             </div>
                             <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
                                 <div class="row mb-50">
-                                    <div class="col-lg-6 col-md-12">
+                                    {{-- <div class="col-lg-6 col-md-12">
                                         <div class="mb-3 heading_s1">
                                             <h4>Calculate Shipping</h4>
                                         </div>
@@ -389,7 +389,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-6 col-md-12">
                                         <div class="border p-md-4 p-30 border-radius cart-totals">
                                             <div class="mb-3 heading_s1">
