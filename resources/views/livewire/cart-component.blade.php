@@ -85,7 +85,7 @@
                             </div>
                             <div class="cart-action text-end">
                                 {{-- <a class="mr-10 btn mb-sm-15"><i class="mr-10 fi-rs-shuffle"></i>Update Cart</a> --}}
-                                <a class="btn "><i class="mr-10 fi-rs-shopping-bag">{{ route('shop') }}</i>Continue Shopping</a>
+                                <a href="{{ route('shop') }}" class="btn "><i class="mr-10 fi-rs-shopping-bag"></i>Continue Shopping</a>
                             </div>
                             <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
                                 <div class="row mb-50">
@@ -424,7 +424,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <a href="#" wire:click.prevent="checkout" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
+                                            <a href="{{ route('shop.checkout') }}" class="btn "> <i class="mr-10 fi-rs-box-alt"></i>
                                                 Proceed To CheckOut</a>
                                         </div>
                                     </div>
