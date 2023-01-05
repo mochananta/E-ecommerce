@@ -229,12 +229,13 @@
                                 Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
-                        <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+                        {{-- <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
                             <div class="pb-10 mb-20 widget-header position-relative">
                                 <h5 class="mb-10 widget-title">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             <div class="clearfix single-post">
+                               @foreach ($products as $product)
                                 <div class="image">
                                     <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}" alt="{{ $product->name }}">
                                 </div>
@@ -245,7 +246,8 @@
                                         <div class="product-rating" style="width:90%"></div>
                                     </div>
                                 </div>
-                            </div>
+                                @endforeach --}}
+                            {{-- </div>
                             <div class="clearfix single-post">
                                 <div class="image">
                                     <img src="{{ asset('assets/imgs/products')}}/{{$product->image}}" alt="{{ $product->name }}">
@@ -270,7 +272,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="banner-img wow fadeIn mb-45 animated d-lg-block d-none">
                             <img src="{{ asset('assets/imgs/banner/banner-11.jpg') }}" alt="">
                             <div class="banner-text">
