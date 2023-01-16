@@ -4,21 +4,14 @@ namespace App\Http\Livewire;
 
 use App\Models\Checkout;
 use App\Models\Order;
-<<<<<<< HEAD
-use App\Models\Product;
-use App\Models\User;
-=======
 use App\Models\OrderItem;
 use App\Models\Product;
 use App\Models\Shipping;
 use App\Models\Transaction;
->>>>>>> 7022cf4a44f0499f47459532174e7f2b175021b3
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-<<<<<<< HEAD
-=======
 
 // class CheckoutComponent extends Component
 // {
@@ -192,7 +185,6 @@ use Livewire\WithFileUploads;
 //         return view('livewire.checkout-component');
 //     }
 // }
->>>>>>> 7022cf4a44f0499f47459532174e7f2b175021b3
 
 class CheckoutComponent extends Component
 {

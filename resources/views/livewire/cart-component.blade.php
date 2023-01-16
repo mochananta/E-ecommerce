@@ -31,7 +31,6 @@
                                                 <th scope="col">Subtotal</th>
                                                 <th scope="col">Remove</th>
                                             </tr>
-<<<<<<< HEAD
                                         @endforeach
                                         <tr>
                                             <td colspan="6" class="text-end">

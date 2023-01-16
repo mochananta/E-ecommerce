@@ -2,11 +2,7 @@
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
-<<<<<<< HEAD
-                <a href="index.html" rel="nofollow">Home</a>                    
-=======
                 <a href="/" rel="nofollow">Home</a>                    
->>>>>>> 7022cf4a44f0499f47459532174e7f2b175021b3
                 <span></span> Contact us
             </div>
         </div>
@@ -52,5 +48,4 @@
 </div>    
     </section>
 </main>
-
 
